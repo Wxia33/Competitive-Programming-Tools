@@ -12,7 +12,6 @@ Separate each test case in your input text file with a newline character, and on
 
 Example:
 
-""""""
 123
 3 4 5
 
@@ -21,4 +20,3 @@ Example:
 
 456
 3 5 6
-""""""
