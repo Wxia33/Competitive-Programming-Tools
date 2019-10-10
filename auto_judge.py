@@ -49,7 +49,7 @@ for case in range(len(input_args)):
     test_case = "test_case_" + str(case) + ".txt"
     test_file = open("./test_cases/" + test_case, "w")
     for inputs in input_args[case]:
-        test_file.write(inputs)
+        test_file.write(inputs + "\n")
     test_file.close()
 
 try:
@@ -59,6 +59,6 @@ except:
 
 for ind, test_cases in enumerate(os.listdir("./test_cases/")):
     cat_str = "cat " \
-              + "./test_cases/" + test_cases + " | " + "python " \
+              + "./test_cases/" + test_cases + " | " + "python3 " \
               + file_name + " > ./results/result_" + str(ind) + ".txt"
     os.system(cat_str)
